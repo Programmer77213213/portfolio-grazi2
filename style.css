@@ -1,0 +1,222 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: medium;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-color: white;
+    height: 1900px;
+}
+
+nav#menu-nav-bar {
+    background: rgba(0, 0, 0, 0.568);
+    padding-bottom: 20px;
+    padding: 3px 3px 3px 3px;
+}
+
+nav#menu-nav-bar>ul#ul-menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav#menu-nav-bar>ul#ul-menu>li {
+    display: inline-block;
+    margin: 2px 2px 2px 2px;
+}
+
+.links-nav {
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px 7px 0px 7px;
+}
+
+a#contact {
+    margin-right: 40px;
+}
+
+img#img-perfil {
+    width: 340px;
+    height: 340px;
+}
+
+h1#name-main-page-div {
+    font-size: 70px;
+}
+
+p#descriçao-main-div-page {
+    font-size: 47px;
+}
+
+header#header-site-001 {
+    height: 400px;
+    width: 1349px;
+    background: url(Mídia/img/Design\ sem\ nome.jpg)no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+img#img-perfil-001 {
+    width: 200px;
+    height: 230px;
+    border: 3px solid black;
+    margin:37px 7px 7px 37px;
+}
+
+p#name-figure {
+    color:white;
+}
+
+main#containner>h1,h2,h3,p {
+    color: black;
+}
+
+main#containner {
+    display:grid;
+    grid-template-areas: 
+    "box1 box2"   
+    ;
+}
+
+div#box-1 {
+    margin-left:100px;
+    grid-area:box1;
+}
+
+div#box-2 {
+    margin-top:70px;
+    grid-area:box2;
+}
+
+.black-words {
+    color:black;
+}
+
+main#conteudo-001 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:50vh; 
+    font-size:35px;
+    color:black;
+} 
+
+main#conteudo-001 h1{   
+    font-size:35px;
+    color:rgb(58, 58, 58);
+    font-weight:bold;
+} 
+
+.boxElement {
+    border:2px solid rgb(7, 7, 7);
+    background-color:rgb(7, 7, 7);
+    height:270px;
+    width:270px;
+}
+
+div#containner-002 {
+    margin:auto;
+    width:930px;
+    display:grid;
+    grid-template-areas: 
+    "element1 element2 element3"   
+    "element4 element5 element6";
+    grid-gap: 35px; /* Isso adiciona um espaço de 5px entre as colunas e linhas da grade */
+}
+
+div#element-1 {
+    grid-area:element1;
+}
+
+div#element-2 {
+    grid-area:element2;
+}
+
+div#element-3 {
+    grid-area:element3;
+}
+
+div#element-4 {
+    grid-area:element4;
+}
+
+div#element-5 {
+    grid-area:element5;
+}
+
+div#element-6 {
+    grid-area:element6;
+}
+
+.text-model {
+    color:white;
+    font-size:37px;
+    font-weight:100;
+    text-align:center;
+    margin-top:100px;
+}
+
+footer#rodape-001 {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(7, 7, 7);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer#rodape-001 a {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    body::before {
+        content: "Site só disponível para computador";
+        font-size: 20px;
+        color: black;
+    }
+
+    header#header-site-001 {
+        display:none;
+    }
+
+    main#containner {
+        display:none;
+    }
+
+    main#conteudo-001 {
+        display:none;
+    }
+
+    div#containner-002 {
+        display:none;
+    }
+
+    footer#rodape-001 {
+        display:none;
+    }
+
+    header#header-site-001 {
+        display:none;
+    }
+
+    
+}
